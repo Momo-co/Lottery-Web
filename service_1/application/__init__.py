@@ -4,8 +4,11 @@ import os
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = str(os.urandom(16))
+app.config.update(
+    SQLALCHEMY_DATABASE_URI = os,getenv("DATABASE_URI"),
+    SQLALCHEMY_TRACK_MODIFICATIONS = False,
+    SECRET_KEY = str(os.urandom(16))
+)
+
 
 db = SQLAlchemy(app)
