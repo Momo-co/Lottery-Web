@@ -3,12 +3,14 @@ import random
 
 app = Flask(__name__)
 
-def num():
-    return random.randint(0,9)
+numbers = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+
+def num(number_list):
+    return random.choice(number_list)
 
 @app.route('/get/num')
 def get_num():
-    return num()
+    return num(numbers)
     
 
 if __name__ == '__main__':
