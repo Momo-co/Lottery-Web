@@ -6,7 +6,7 @@ app = Flask(__name__)
 colour = ['Red', 'Yellow', 'Green']
 
 @app.route('/get/colour')
-def home():
+def get_colour():
     return random.choice(colour)
 
 if __name__ == '__main__':
