@@ -15,6 +15,9 @@ WORKDIR /service_1
 # Things we need in a container
 COPY . .
 
+# Install 
+RUN pip3 install -r requirements.txt
+
 # Ports to expose
 EXPOSE 5000
 
