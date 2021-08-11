@@ -3,7 +3,7 @@ import random
 
 app = Flask(__name__)
 
-numbers = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 def num(number_list):
     return random.choice(number_list)
