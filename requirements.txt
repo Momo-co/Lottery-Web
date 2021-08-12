@@ -1,7 +1,9 @@
 pytest
 pytest-cov
 flask
-flask flask_sqlalchemy
+flask_sqlalchemy
 pymysql
-flask flask-wtf wtforms
+flask-wtf 
+wtforms
 flask-testing
+requests_mock
