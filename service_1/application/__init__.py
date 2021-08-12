@@ -12,3 +12,5 @@ app.config.update(
 
 
 db = SQLAlchemy(app)
+
+from . import routes
