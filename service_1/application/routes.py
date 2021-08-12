@@ -1,6 +1,6 @@
-from application import app, db
+from . import app, db
 from flask import redirect, request, render_template, url_for
-from application.models import Record
+from .models import Record
 import requests
 import datetime
 
