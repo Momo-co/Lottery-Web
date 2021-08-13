@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Lottery Website</title>
+    </head>
+
+    <body>
+
+        <h3>Your lucky colour is {{ colour }} and lucky number is {{ number }}, so you just won £{{prize}}!</h3>
+
+        <h4>Your lottery history</h4>
+        {% for record in all_record %}
+            <h5> colour:{{ record.colour }} number:{{ record.number }} prize:{{ record.prize }}
+            </h5>
+        {% endfor %}
+
+        <h4>So far you have won a total of £{{ total_prize }}</h4>
+
+        <h4>Game rules</h4>
+        <h5>Red = £1</h5>
+        <h5>Yellow = £50</h5>
+        <h5>Green = £100</h5>
+        <h5>Lucky number multiples your colour value</h5>
+        <h5>So for instance, if your lucky colour is yellow and lucky number is 4: Then you win £200!</h5>
+    </body>
+</html>
