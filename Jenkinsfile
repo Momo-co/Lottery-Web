@@ -12,9 +12,9 @@ pipeline{
                 sh "docker-compose config"
             }
         }
-        stage('Docker login'){
+        stage('Build Docker-Compose'){
             steps{
-                sh "docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}"
+                sh "docker-compose build --parallel"
             }
         }
     }
