@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -e
-sudo apt install python3-venv
+sudo apt install python3-venv -y
 sudo apt install python3 -y
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 
 python3 -m venv venv
 source venv/bin/activate
