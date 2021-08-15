@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Get back to previous directory?
-cd ../
-
 # Build Images
 docker-compose build --parallel
 
