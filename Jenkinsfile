@@ -8,16 +8,26 @@ pipeline{
     }
     stages{
         stage('Setup'){
-            sh "bash scripts/setup.sh"
+            steps{
+                sh "bash scripts/setup.sh"
+            }
         }
         stage('Test App'){
+            steps{
+
+            }
             sh "bash scripts/test.sh"
         }
         stage('Build Image'){
-            sh "bash scripts/build.sh"
+            steps{
+                sh "bash scripts/build.sh" 
+            }
+            
         }
         stage('Deploy Stack'){
-            sh "bash scripts/deploy.sh"
+            steps{
+                sh "bash scripts/deploy.sh"
+            }
         }
     }
 
