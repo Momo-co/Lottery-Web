@@ -7,29 +7,9 @@ pipeline{
         USER= credentials("USER")
     }
     stages{
-        stage('Debug docker login'){
+        stage('Debug '){
             steps{
-                sh "docker login - u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}"
-            }
-        }
-        stage('Install Dependencies'){
-            steps{
-                sh "bash scripts/setup.sh"
-            }
-        }
-        stage('Test App'){
-            steps{
-                sh "bash scripts/test.sh"
-            }
-        }
-        stage('Build Images'){
-            steps{
-                sh "bash scripts/build.sh"
-            }
-        }
-        stage('Deploy Stack'){
-            steps{
-                sh "bash scripts/deploy.sh"
+                sh "docker-compose config"
             }
         }
     }
