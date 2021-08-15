@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        DATABASE_URI=...
+        DATABASE_URI= credentials("DATABASE_URI")
     }
     stages{
         stage('Debug'){
