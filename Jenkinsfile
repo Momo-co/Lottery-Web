@@ -12,6 +12,11 @@ pipeline{
                 sh "docker-compose config"
             }
         }
+        stage('Docker login'){
+            steps{
+                sh "docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}"
+            }
+        }
     }
 
 }
