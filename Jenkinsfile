@@ -17,6 +17,11 @@ pipeline{
                 sh "docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}"
             }
         }
+        stage('Debug Docker-Compose'){
+            steps{
+                sh "docker-compose build --parallel"
+            }
+        }
     }
 
 }
