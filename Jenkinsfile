@@ -24,6 +24,11 @@ pipeline{
             }
             
         }
+        stage('Configure VMs'){
+            steps{
+                sh "bash scripts/config.sh"
+            }
+        }
         stage('Deploy Stack'){
             steps{
                 sh "bash scripts/deploy.sh"
