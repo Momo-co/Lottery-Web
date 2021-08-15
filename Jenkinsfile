@@ -14,9 +14,9 @@ pipeline{
         }
         stage('Test App'){
             steps{
-
+                sh "bash scripts/test.sh"
             }
-            sh "bash scripts/test.sh"
+            
         }
         stage('Build Image'){
             steps{
