@@ -7,20 +7,17 @@ pipeline{
         USER= credentials("USER")
     }
     stages{
-        stage('Debug '){
-            steps{
-                sh "docker-compose config"
-            }
+        stage('Setup'){
+            sh "bash scripts/setup.sh"
         }
-        stage('Debug Docker-Hub'){
-            steps{
-                sh "docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}"
-            }
+        stage('Test App'){
+            sh "bash scripts/test.sh"
         }
-        stage('Debug Docker-Compose'){
-            steps{
-                sh "docker-compose build --parallel"
-            }
+        stage('Build Image'){
+            sh "bash scripts/build.sh"
+        }
+        stage('Deploy Stack'){
+            sh "bash scripts/deploy.sh"
         }
     }
 
