@@ -3,8 +3,8 @@ pipeline{
     environment{
         DATABASE_URI= credentials("DATABASE_URI")
         DOCKERHUB_CREDENTIALS= credentials("DOCKERHUB_CREDENTIALS")
-        SECRET_KEY= credentials("DOCKERHUB_CREDENTIALS")
-        USER= credentials("DOCKERHUB_CREDENTIALS")
+        SECRET_KEY= credentials("SECRET_KEY")
+        USER= credentials("USER")
     }
     stages{
         stage('Install Dependencies'){
