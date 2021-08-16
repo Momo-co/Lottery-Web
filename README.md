@@ -106,7 +106,7 @@ Once we press refresh, the game starts again. Now we won £1 and therefore our t
 
 
 ### Jenkins
-
+In order to view full log of jenkins configuration build, you may press the specific build you want to view and enter the console output of that build
 ![Jenkins](https://user-images.githubusercontent.com/63979521/129550780-763ba1bd-9515-4c02-be8f-841a5d660b5f.png)
 
 
