@@ -87,6 +87,18 @@ For my risk assessment, I reviewed my risk assessment from previous project and 
 ## Project Outcome
 
 ### Front End
+Upon visiting the website, the game starts. We have won £800 in this case and have so far won total of £19552
+
+![Web1](https://user-images.githubusercontent.com/63979521/129561445-7364f027-52a0-494a-b281-e9e48059d460.png)
+
+![BottomWeb1](https://user-images.githubusercontent.com/63979521/129561420-a2408599-dd95-4e75-bae0-501394bdab41.png)
+
+Once we press refresh, the game starts again. Now we won £1 and therefore our total prize changed to £19553
+
+![Web2](https://user-images.githubusercontent.com/63979521/129561749-4acc553d-f31d-47bc-b528-6d359fdbe60c.png)
+
+![BottomWeb2](https://user-images.githubusercontent.com/63979521/129561764-3414950d-0bfe-4064-9780-a710b2bd3217.png)
+
 
 ### Unit Testing
 
