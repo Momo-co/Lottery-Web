@@ -11,7 +11,11 @@ The following services will be implemented as stated:
 ## Software Design
 
 ### Project Tracking board
-I used a trello app to track progress in my project.
+I used a ansana board app to track progress in my project.
+
+![Ansana Board](https://user-images.githubusercontent.com/63979521/129543672-a1e6c072-ecf7-4cf0-911a-53b18dc17967.png)
+
+The link for this ansana board can be found here https://app.asana.com/0/1200791323481567/1200791323481567
 
 ### Entity Relationship Diagram
 For my entity Diagram, I did not require relationships between multiple entities since the user would most likely be concerned with what they won rather than finding out what other users have won. I started off with having entity regarding indiviual prize that user won as shown below:
@@ -64,6 +68,10 @@ Sixth User Story
 
 
 ### CI Pipeline
+CI pipeline is a digram for continous integration where it contains all the necessary tools for allowing automated code testing.
+
+![CI Pipeline](https://user-images.githubusercontent.com/63979521/129550509-7730e9e3-e561-4ef3-89ec-7ea0ef953209.png)
+
 
 ### Infrastructure Diagram
 Infrastructure Diagram presents the Virtual Machine used in the project and also how they are communicated accross one another.
@@ -82,9 +90,35 @@ For my risk assessment, I reviewed my risk assessment from previous project and 
 
 ### Unit Testing
 
+![Test](https://user-images.githubusercontent.com/63979521/129550555-c82fb282-f086-47a9-9bf7-56fe765b376e.png)
+
+
 ### Jenkins
 
-### Pipeline
+![Jenkins](https://user-images.githubusercontent.com/63979521/129550780-763ba1bd-9515-4c02-be8f-841a5d660b5f.png)
+
+
+### Pipeline deploy
+
+![setup](https://user-images.githubusercontent.com/63979521/129550587-c1276cf4-4bbe-4e4e-9741-6b4353f9daf5.png)
+
+![test1](https://user-images.githubusercontent.com/63979521/129550627-1c118278-659e-4534-ac49-d7b3735a15fa.png)
+
+![test2](https://user-images.githubusercontent.com/63979521/129550641-c0d858af-e718-412d-bcfe-7f6deeb19a01.png)
+
+![docker1](https://user-images.githubusercontent.com/63979521/129550666-934e9a67-3574-4f9d-b31a-893d85cef9db.png)
+
+![docker2](https://user-images.githubusercontent.com/63979521/129550680-1ee70cff-bacb-44b8-8e0d-f1308e3e6b34.png)
+
+![docker3](https://user-images.githubusercontent.com/63979521/129550687-b8abbf7c-11b8-4e17-a022-7972b66b3317.png)
+
+![docker4](https://user-images.githubusercontent.com/63979521/129550693-a862ed90-5591-40c9-999a-bcd96e5589c2.png)
+
+![docker5](https://user-images.githubusercontent.com/63979521/129550696-3a82821b-ba6c-411c-8705-64617a5bdadb.png)
+
+![ansible](https://user-images.githubusercontent.com/63979521/129550704-db75591c-4324-45ee-9ae3-3d91d0c025f0.png)
+
+![ansible2](https://user-images.githubusercontent.com/63979521/129550708-9b1d8d4d-bf8e-4e58-ad19-cff79f6006f1.png)
 
 
 ### Author
